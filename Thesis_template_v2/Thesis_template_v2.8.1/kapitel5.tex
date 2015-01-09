@@ -1,0 +1,112 @@
+\chapter{Tabellen}
+\label{Tabellen}
+\thispagestyle{empty}
+
+Wie erzeuge ich eine Tabelle ??
+
+\vspace{5cm}
+
+\begin{table}[h]
+ \caption{Rechenvorteil der FFT gegen"uber der direkten FT}
+ \begin{center}
+ \begin{tabular}{|rrrr|}
+ \hline
+ & direkte FT & FFT & Rechenvorteil\\
+ $N$ & $N^{2}$ & $N \log_{2} N$ & $\log_{2} N/N$ \\
+ \hline
+ \hline
+   2&          4&        2&     50,0\%\\
+   4&         16&        8&     50,0\%\\
+   8&         64&       24&     37,5\%\\
+  16&        256&       64&     25,0\%\\
+  32&      1.024&      160&     15,6\%\\
+  64&      4.096&      384&      9,4\%\\
+ 128&     16.384&      896&      5,5\%\\
+ 256&     65.536&    2.048&      3,1\%\\
+ 512&    262.144&    4.608&      1,8\%\\
+1024&  1.048.576&   10.240&      1,0\%\\
+2048&  4.194.304&   22.528&      0,5\%\\
+4096& 16.777.216&   49.152&      0,3\%\\
+8192& 67.108.864&  106.496&      0,2\%\\
+ \hline
+  \end{tabular}
+ \end{center}
+ \label{tablerechenvorteilfft}
+\end{table}   
+
+\newpage
+
+Hier ist ein Beispiel f"ur eine colorierte Tabelle
+\begin{table}[h!]
+ \caption[Typische Verteilung der Ionen im Intra- und Extrazellul"arraum einer Muskelzelle.]{Typische Verteilung der Ionen im Intra- und Extrazellul"arraum einer Muskelzelle \cite{silbernagl01}. Durch den Konzentrationsunterschied entsteht f"ur jede Ionenart eine sogenannte Nernst-Spannung.}
+\centering
+\begin{tabular}{|>{\columncolor{hellblau}}c|c|c|c|}  
+  \hline\rowcolor{hellblau}
+  & intrazellul"are & exrazellul"are & Nernst-\\\rowcolor{hellblau}
+   \, Ionenart\, &\, Konz. [$mmol/kg\,H_2O$]\, &\, Konz. [$mmol/kg\,H_2O$]\, &\, Spannung [mV]\, \\
+  \hline \hline
+  $K^{+}$&\cellcolor{hellgelb} 4,5 &\cellcolor{hellgelb} 160 &\cellcolor{hellgelb} -95,4\\
+  $Na^{+}$&\cellcolor{hellgelb} 144 &\cellcolor{hellgelb} 7 &\cellcolor{hellgelb} 80,2\\
+  $Ca^{2+}$&\cellcolor{hellgelb} 1,3 &\cellcolor{hellgelb} 0,00001-0,0001 &\cellcolor{hellgelb} 126,5-157,3\\
+  $Cl^{-}$&\cellcolor{hellgelb} 114 &\cellcolor{hellgelb} 7 &\cellcolor{hellgelb} -74,5\\
+  \hline
+\end{tabular}
+%  \label{ionenkonzentration}
+ \vspace{2mm}
+ \label{ionenkonzentration}
+\end{table}
+
+
+\newpage
+
+In   diesem   Abschnitt   sollen lediglich   die   grundlegenden
+Eigenschaften  der  Fouriertransformation kurz tabellarisch dargestellt werden
+(Tabelle  \ref{tableeigenft}). Die  Beweise zu den Regeln und  alle  Eigenschaften
+sind in \cite{gonzalez92bsp} zu finden.
+
+\begin{table}[H]
+ \begin{center}
+  \begin{tabular}{|ccc|}
+ \hline
+ Ortsbereich &$\circ \hspace{-0.15cm} - \hspace{-0.15cm} \bullet$& Frequenzbereich\\\hline
+ \hline
+ Linearit"at &&  Linearit"at \\
+ $k_{1}g(x)+k_{2}f(x)$ && $k_{1}G(u)+k_{2}F(u)$ \\\hline
+
+ Symmetrie   &&  Symmetrie \\
+ $F(x)$ && $f(-u)$ \\\hline
+
+ Ortsskalierung && reziproke\\
+ && Frequenzskalierung \\
+ $f(kx)$ && $\frac{1}{|k|}F(\frac{u}{k})$\\\hline
+
+ reziproke&&\\
+ Ortsskalierung && Frequenzskalierung \\
+ $\frac{1}{|k|}f(\frac{x}{k})$ && $F(ku)$\\\hline
+
+ Ortsverschiebung && Phasenverschiebung \\
+ $f(x-x_{0})$ && $F(u) e^{ -j 2 \pi u x_{0} }$\\\hline
+
+ Modulation && Frequenzverschiebung \\
+ $f(x) e^{ -j 2 \pi x u_{0} }$ && $F(u-u_{0})$\\\hline
+
+ gerade Funktion && reelle Funktion \\
+ $f_{g}(x)$ && $F_{g}(u)=R_{g}(u)$\\\hline
+
+ ungerade Funktion && imagin"are Funktion \\
+ $f_{u}(u)$ && $F_{u}(u)=jI_{u}(u)$\\\hline
+
+ reelle Funktion && gerader Realteil,\\
+ && ungerader Imagin"arteil \\
+ $f(x)=f_{r}(u)$ && $F(u)=R_{g}(u)+j I_{u}(u)$\\\hline
+
+ imagin"are Funktion && ungerader Realteil, \\
+ && gerader Imagin"arteil \\
+ $f(x)=j f_{i}(u)$ && $F(u)=R_{u}(u)+j I_{g}(u)$\\\hline
+
+  \end{tabular}
+ \end{center}
+ \caption[Wichtige Eigenschaften der Fouriertransformation]{
+Wichtige Eigenschaften der Fouriertransformation}
+ \label{tableeigenft}
+\end{table}

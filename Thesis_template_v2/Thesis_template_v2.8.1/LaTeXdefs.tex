@@ -1,0 +1,140 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% For KIT border on title page %
+%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[absolute,overlay]{textpos}
+%\usepackage{tikz}
+
+
+
+%%%%%%%%%%%%%%%%%%%
+% Extensions for Tables  %
+%%%%%%%%%%%%%%%%%%%
+%% an example of a colored table can be found "kapitel5.tex"
+\usepackage{color}
+\usepackage{colortbl}
+\definecolor{hellgrau}{rgb}{0.95,0.95,0.95}
+\definecolor{hellblau}{rgb}{0.76,0.92,1}
+\definecolor{hellgrun}{cmyk}{0.8,0,1,0}
+\definecolor{hellgelb}{rgb}{0.99,0.99,0.81}
+%% END color-tables
+\usepackage{multicol} 							% for \multicol command in tables
+%\usepackage{threeparttable} 				% enables to add footnotes into tables
+%
+
+ \renewcommand{\sfdefault}{phv}
+% \usepackage[pdf]{pstricks}
+%\usepackage[crop=off]{auto-pst-pdf}
+\usepackage{pstool}
+\usepackage{psfrag}
+
+
+%%%%%%%%%%%%%%%
+% General Package %
+%%%%%%%%%%%%%%%
+\ifdissforprint
+	\usepackage{styles/diplDissPrint}
+\else
+	\usepackage{styles/dipl}
+\fi
+\ifenglish
+	\shortindexingoff
+	\usepackage[english]{babel}			% Uncomment for ENGLISH figure captions etc.	
+	\shortindexingon
+\fi
+\graphicspath{{pics/}} 							% defines path where figures are stored
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Necessary Packages for this Template  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{graphicx} 							% figure environment
+%\usepackage{epsfig}								% allows to directly embed eps figures when using pdflatex
+\usepackage{subfigure} 							% enables the use of subfigure 
+%\usepackage[
+%  unicode=true,
+%  a4paper=true,
+%  pdfpagelabels=true,
+%  pdfborder={0 0 0},
+%  plainpages=false,
+%  pdftitle={Title of your work}, 				% FILL IN YOUR DATA HERE !
+%  pdfauthor={Your name},
+%  pdfsubject={Diplomarbeit},
+%  pdfkeywords={keyword1, keyword2,keyword2},
+%  pdfstartpage=1,
+%  pdftex,          										% alternatives: ps2pdf, dvips, latex2html
+%]{hyperref}
+\ifthesisisdiss
+	\RequirePackage{times,mathptmx} 		% activate this for a PhD thesis
+\fi
+
+
+%%%%%%%%%%%%%%%%
+% Citation Style 1/2 %
+%%%%%%%%%%%%%%%%
+%%% APA Style (name, year in brackets) %%%
+%% uncomment the following two lines to enable APA-style references:
+\ifapa
+	\usepackage[square]{natbib}
+	\renewcommand{\cite}{\citep}
+	% you also need to change the bibliographystyle from {dipl} to {natbib} (see end of document)
+	% Before compiling the document with the new style, clean up LaTeX file, as otherwise you will encount errors
+\else
+	%%% IEEE style (numbers in brackets) %%%
+	\usepackage[numbers,sort&compress]{natbib} % to sort references in alphabetical oder at end and in ascending oder in text and use "-" instead of multiple "..,..,..," in the text
+\fi
+
+
+%%%%%%%%%%
+% \bibentry %
+%%%%%%%%%%
+%% uncomment the next to lines for the command \bibentry
+%% the command is useful for a list of publications in a PhD thesis
+% \usepackage{bibentry}
+% \nobibliography*
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% Other Interesting Packages  %
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Some packages that might be interesting
+%\RequirePackage{mathcomp} 							% provides \tcmu, \tcomega
+%\RequirePackage{overpic}  								% overlay images with other images,
+                          												% e.g. scale or legend
+%\usepackage[novbox]{pdfsync}     						% allow linking back from PDF to position
+                          												% in source code when using TeXShop 
+%\usepackage[normalem]{ulem} 							% for command \sout = strike out
+%\usepackage[framed,autolinebreaks]{styles/mcode} 	% to include Matlab source code into LaTeX
+%\usepackage{rotating}  									% if you want to rotate tables, pages, figures to landscape
+
+
+%%%%%%%%%%%%%%%%%%%%
+% Workaround for "_" bug %
+%%%%%%%%%%%%%%%%%%%%
+% This "hack" was not fully tested with the template.
+% Use at your own risk!
+% Uncomment this if you want to use colored tables:
+% begingroup
+%   \catcode`\_=\active
+%   \gdef_#1{\ensuremath{\sb{\mathrm{#1}}}}
+% \endgroup
+% \mathcode`\_=\string"8000
+% \catcode`\_=12  
+% END underscore-hack (leave this line commented)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short definitions for trademarks etc.  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\TReg{\textsuperscript{\textregistered}}
+\def\TCop{\textsuperscript{\textcopyright}}
+\def\TTra{\textsuperscript{\texttrademark}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define hyphenation (Silbentrennung) here  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hyphenation{set-up electro-physiology}
+

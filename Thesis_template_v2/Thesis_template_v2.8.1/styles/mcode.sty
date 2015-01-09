@@ -1,0 +1,493 @@
+%%
+%%   This is file `mcode.sty'
+%%
+%%   It is supposed to help you easily include MATLAB source code
+%%   into LaTeX document,  but have it nicely highlighted, using
+%%   the great listings package.
+%%
+%%   PLEASE NOTE that this package does nothing but save you from
+%%   figuring out some configurations  in setting up the LISTINGS
+%%   package. ALL the work is done by that package!  Thus, please
+%%   refer your questions to the listings package documentation.
+%%
+%%   Usage: You have three ways of including your MATLAB code. As
+%%   environment,  as inline object and directly from an external
+%%   file.
+%%
+%%   1) Environment:
+%%
+%%          \begin{lstlisting}
+%%             YOUR CODE HERE
+%%          \end{lstlisting}
+%%
+%%
+%%   2) Inline object:
+%%
+%%          Bla bla \mcode{CODEFRAGMENT} bla bla.
+%%
+%%
+%%   3) Include external file (in environment form)
+%%
+%%          \lstinputlisting{YOUR-FILE.m}
+%%
+%%
+%%   For your convenience this package has the following options:
+%%
+%%   - bw  if you intend to print the document (highlighting done
+%%         via text formatting (bold, italic) and shades of gray)
+%%   
+%%   - numbered  if you want line numbers
+%%
+%%   - autolinebreaks  if you want  the package to  automatically
+%%          wrap your  code.  This is buggy as it  may well break
+%%          break syntax and it  doesn't work well with comments.
+%%          You REALLY should wrap your code manually.
+%%
+%%   - useliterate   if you want  some characters / relations  in
+%%          your code to be replace with something more readable.
+%%          Example: ~= becomes $\neq$, >= becomes $\geq$,  delta
+%%          becomes $\delta$ and so on.
+%%
+%%   - framed  if you want a frame  around the source code blocks
+%%
+%%   - final  if you have  ``gloablly'' set the draft option, the
+%%         listings package will  not output the code at all.  to
+%%         force it to  do so anyway,  load this package with the
+%%         final option (passes the ``final'' on to listings).
+%%
+%%   For example, you may use \usepackage[numbered,framed]{mcode}
+%%   in your document preamble.
+%%   
+%%   Note:  Inside code blocks you  can escape to LaTeX text mode
+%%   using §...§.  For ex. §text and some math: $x^2$§,  which is
+%%   especially  useful  in comments  for putting  nicely typeset
+%%   equations etc.  To get the same  colour/style as in the rest
+%%   of the comment use \mcommentfont, i.e. §\mcommentfont $x^2$§
+%%
+%%   To change the font used,  edit the first line in the "custo-
+%%   mise below" section.  And feel free to  edit other things as
+%%   well.  Refer to the documentation of the listings package to
+%%   see what  else you could do.  If an extra small font  is re-
+%%   quired,  use  {\fontfamily{pcr}\fontsize{3}{4.6}\selectfont}
+%%   in the definition of \lstbasicfont.
+%%
+%%   Author:
+%%      Florian Knorn | florian@knorn.org | www.florian-knorn.com
+%%
+%%   Version history:
+%%      2.4  --  Martin W. Krueger (martin.krueger@kit.edu, www.ibt.kit.edu)
+%%      			  Adapted style to KIT / ETIT / LEN needs. 
+%%      			  Keywords extracted from http://www.mathworks.de/de/help/matlab/functionlist.html 
+%%      			  Short mcode command (mc). 
+%%      			  Lines beginning with double %% are now printed bold, as in the m-code editor in Matlab. 
+%%      			  Added Umlaute to literate table.
+%%      2.3  --  More keywords (thanks Dominik Wild!)
+%%      2.2  --  Bugfix (thanks Willi Gerbig!)
+%%      2.1  --  Finally automatic detection between end and end
+%%      2.0  --  New options for line breaking and literate prog.
+%%      1.8  --  Fixed typo in documentation regarding §...§
+%%      1.7  --  Added MATLAB block comment syntax %{ ...... %}
+%%      1.6  --  Added some infos, dealing with keyword ``end''
+%%      1.5  --  Tweaked check to see wether textcomp is loaded
+%%      1.4  --  Fixed misconfig (mathescape now set to false)
+%%      1.3  --  Purely cosmetic (tabs replaced by spaces)
+%%      1.2  --  Added \lstset{showstringspaces=false}
+%%      1.1  --  Added \mcode command and [final] option
+%%      1.0  --  Release
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%              D O N ' T    T O U C H    T H I S                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\fileversion{2.4}
+\def\filedate{2012/10/15}
+
+\typeout{-- Package: `mcode' \fileversion\space <\filedate> --}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mcode}[\filedate\space\fileversion]
+
+% for bw-option
+\newif\ifbw
+\DeclareOption{bw}{\bwtrue}
+
+% numbered option
+\newif\ifnumbered
+\DeclareOption{numbered}{\numberedtrue}
+
+% final option
+\newif\iffinal
+\DeclareOption{final}{\finaltrue}
+
+% autolinebreaks option
+\newif\ifautolinebreaks
+\DeclareOption{autolinebreaks}{\autolinebreakstrue}
+
+% literate programming (replace certain characters/relations
+\newif\ifuseliterate
+\DeclareOption{useliterate}{\useliteratetrue}
+
+% framed option
+\newif\ifframed
+\DeclareOption{framed}{\framedtrue}
+
+\DeclareOption*{% default
+  \PackageWarning{mcode}{Unknown option `\CurrentOption' !}%
+}
+\ProcessOptions
+
+\ifbw\typeout{ - settings optimized for printing (bw formating)}
+\else\typeout{ - settings optimized for display (colour formating)}\fi
+\ifnumbered\typeout{ - line numbering enabled}\else\fi
+\ifuseliterate\typeout{ - literate programming (character replacements) enabled}\else\fi
+\ifautolinebreaks\typeout{ - automatic line breaking enabled (careful, buggy!)}\else\fi
+\ifframed\typeout{ - framed listings}\else\fi
+
+% This command allows you to typeset syntax highlighted Matlab
+% code ``inline''.  The font size \small seems to look best...
+\newcommand{\mcode}[1]{\lstinline[basicstyle=\lstbasicfont\small]|#1|}
+\newcommand{\mc}[1]{\lstinline[basicstyle=\lstbasicfont\small]|#1|}
+
+% check if color command exists
+\ifx\color\undefined%
+  \RequirePackage{xcolor}%
+\fi
+
+% check if greybg command exists % mwk
+\ifx\greybg\undefined%
+  \RequirePackage{color}%
+  \definecolor{hellgrau}{rgb}{0.90,0.90,0.90}%
+\fi
+
+% check if listings has been loaded
+\ifx\lstset\undefined%
+  \iffinal
+    \RequirePackage[final]{listings}
+  \else
+    \RequirePackage{listings}
+  \fi
+\fi
+
+% Check if textcomp has been loaded (this package is needed for
+% upright quotes '' (instead of typographic ones `´)...
+\ifx\textquotesingle\undefined% 
+  \RequirePackage{textcomp}%
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                C U S T O M I S E   B E L O W                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ---------------------------------------------------------------------------------
+% default font
+\def\lstbasicfont{\fontfamily{pcr}\selectfont\footnotesize}
+
+% ---------------------------------------------------------------------------------
+% matlat languate definition
+\lstdefinelanguage{matlabfloz}{%
+  alsoletter={...},%
+  morekeywords={%                             % keywords
+  		break,case,catch,continue,elseif,else,end,%
+    		for,function,global,if,otherwise,persistent,%
+      	return,switch,try,while,methods,properties,%
+        events,classdef,...,		
+  		ans,clc,diary,format,home,iskeyword,more,commandhistory,commandwindow,syntax,%
+		accumarray,blkdiag,diag,eye,false,freqspace,linspace,logspace,meshgrid,ndgrid,%
+		ones,rand,true,zeros,cat,horzcat,vertcat,colon,end,ind2sub,%
+		sub2ind,length,ndims,numel,size,iscolumn,isempty,ismatrix,isrow,isscalar,%
+		isvector,blkdiag,circshift,ctranspose,diag,flipdim,fliplr,flipud,ipermute,permute,%
+		repmat,reshape,rot90,shiftdim,issorted,sort,sortrows,squeeze,transpose,inline,%
+		vectorize,arithmeticoperators,uplus,plus,uminus,minus,times,mtimes,rdivide,ldivide,%
+		mrdivide,mldivide,power,mpower,cumprod,cumsum,diff,prod,sum,ceil,%
+		fix,floor,idivide,mod,rem,round,relationaloperators,eq,ge,gt,%
+		le,lt,ne,isequal,isequaln,isequalwithequalnans,logicaloperatorselementwise,logicaloperatorsshortcircuit,and,not,%
+		or,xor,all,any,false,find,islogical,logical,true,intersect,%
+		ismember,issorted,setdiff,setxor,union,unique,bitand,bitcmp,bitget,bitmax,%
+		bitor,bitset,bitshift,bitxor,swapbytes,specialcharacters,colon,double,single,int8,%
+		int16,int32,int64,uint8,uint16,uint32,uint64,cast,typecast,isinteger,%
+		isfloat,isnumeric,isreal,isfinite,isinf,isnan,intmax,intmin,realmax,realmin,%
+		blanks,cellstr,char,iscellstr,ischar,sprintf,strcat,setstr,strvcat,strings,%
+		ischar,isletter,isspace,isstrprop,sscanf,strfind,strrep,strtok,validatestring,symvar,%
+		regexp,regexpi,regexprep,regexptranslate,findstr,strread,strmatch,strcmp,strcmpi,strncmp,%
+		strncmpi,blanks,deblank,strtrim,lower,upper,strjust,struct,fieldnames,getfield,%
+		isfield,isstruct,orderfields,rmfield,setfield,arrayfun,structfun,cell2struct,struct2cell,cell,%
+		cell2mat,cell2struct,celldisp,cellfun,cellplot,cellstr,iscell,iscellstr,mat2cell,num2cell,%
+		struct2cell,deal,function_handle,feval,func2str,str2func,functions,containers.mapclass,containers.map.iskey,containers.map.keys,%	
+			containers.map.remove,containers.map.values,containers.map.length,containers.map.size,timeseries.append,timeseries.get,timeseries.getdatasamplesize,timeseries.getqualitydesc,timeseries.getsamples,timeseries.plot,%
+				timeseries.set,tsdata.event,tstool,timeseries.addsample,timeseries.ctranspose,timeseries.delsample,timeseries.detrend,timeseries.filter,timeseries.getabstime,timeseries.getinterpmethod,%
+		timeseries.getsampleusingtime,timeseries.idealfilter,timeseries.resample,timeseries.setabstime,timeseries.setinterpmethod,timeseries.synchronize,timeseries.transpose,addevent,delevent,gettsafteratevent,%
+		gettsafterevent,gettsatevent,gettsbeforeatevent,gettsbeforeevent,gettsbetweenevents,timeseries.iqr,timeseries.max,timeseries.mean,timeseries.median,timeseries.min,%
+		timeseries.std,timeseries.sum,timeseries.var,gettscollection,isemptytscollection,lengthtscollection,timeseries.plot,settscollection,sizetscollection,tscollection,%
+		tstool,addsampletocollection,addts,delsamplefromcollection,getabstimetscollection,getsampleusingtimetscollection,gettimeseriesnames,horzcattscollection,removets,resampletscollection,%
+		setabstimetscollection,settimeseriesnames,vertcattscollection,is,isa,iscell,iscellstr,ischar,isfield,isfloat,%
+		ishghandle,isinteger,isjava,islogical,isnumeric,isobject,isreal,isscalar,isstr,isstruct,%
+		isvector,class,validateattributes,whos,char,int2str,mat2str,num2str,str2double,str2num,%
+		native2unicode,unicode2native,base2dec,bin2dec,dec2base,dec2bin,dec2hex,hex2dec,hex2num,num2hex,%
+		cell2mat,cell2struct,cellstr,mat2cell,num2cell,struct2cell,str2mat,addtodate,calendar,clock,%
+		cputime,date,datenum,datestr,datevec,eomday,etime,now,weekday,uplus,%
+		plus,uminus,minus,mtimes,times,rdivide,mrdivide,ldivide,mldivide,power,%
+		mpower,cumprod,cumsum,diff,prod,sum,ceil,fix,floor,idivide,%
+		mod,rem,round,sin,sind,asin,asind,sinh,asinh,cos,%
+		cosd,acos,acosd,cosh,acosh,tan,tand,atan,atand,atan2,%
+		atan2d,tanh,atanh,csc,cscd,acsc,acscd,csch,acsch,sec,%
+		secd,asec,asecd,sech,asech,cot,cotd,acot,acotd,coth,%
+		acoth,hypot,exp,expm1,log,log10,log1p,log2,nextpow2,nthroot,%
+		pow2,reallog,realpow,realsqrt,sqrt,abs,angle,complex,conj,cplxpair,%
+		i,imag,isreal,j,real,sign,unwrap,factor,factorial,gcd,%
+		isprime,lcm,nchoosek,perms,primes,rat,poly,polyder,polyeig,polyfit,%
+		polyint,polyval,polyvalm,residue,roots,airy,besselh,besseli,besselj,besselk,%
+		bessely,beta,betainc,betaincinv,betaln,ellipj,ellipke,erf,erfc,erfcinv,%
+		erfcx,erfinv,expint,gamma,gammainc,gammaincinv,gammaln,legendre,psi,cart2pol,%
+		cart2sph,pol2cart,sph2cart,eps,i,j,inf,pi,nan,isfinite,%
+		isinf,isnan,compan,gallery,hadamard,hankel,hilb,invhilb,magic,pascal,%
+		rosser,toeplitz,vander,wilkinson,cross,dot,kron,surfnorm,tril,triu,%
+		transpose,cond,condest,funm,inv,linsolve,lscov,lsqnonneg,pinv,rcond,%
+		chol,cholinc,ichol,cholupdate,ilu,lu,luinc,qr,qrdelete,qrinsert,%
+		qrupdate,planerot,ldl,cdf2rdf,rsf2csf,balance,cdf2rdf,condeig,eig,eigs,%
+		gsvd,hess,ordeig,ordqz,ordschur,poly,polyeig,qz,rsf2csf,schur,%
+		sqrtm,ss2tf,svd,svds,gsvd,cond,condeig,det,norm,normest,%
+		null,orth,rank,rcond,rref,subspace,trace,expm,logm,sqrtm,%
+		bsxfun,arrayfun,accumarray,corrcoef,cov,max,mean,median,min,mode,%
+		std,var,rng,rand,randn,randi,randstream.randstream,randperm,randstream.get,randstream.create,%
+		randstream.getdefaultstream,randstream.list,randstream.setdefaultstream,randstream.rand,randstream.randi,randstream.randn,randstream.randperm,randstream.randstream,randstream.reset,randstream.set,%
+		interp1,griddedinterpolantclass,pchip,spline,ppval,mkpp,unmkpp,padecoef,interpft,interp1q,%
+		interp2,interp3,interpn,griddedinterpolantclass,ndgrid,meshgrid,griddata,griddatan,triscatteredinterp,griddata3,%
+		fminbnd,fminsearch,fzero,lsqnonneg,optimget,optimset,ode45,ode15s,ode23,ode113,%
+		ode23t,ode23tb,ode23s,ode15i,decic,odextend,odeget,odeset,deval,bvp4c,%
+		bvp5c,bvpinit,bvpxtend,bvpget,bvpset,deval,dde23,ddesd,ddensd,ddeget,%
+		ddeset,deval,pdepe,pdeval,integral,integral2,integral3,quadgk,quadv,quad,%
+		quadl,quad2d,dblquad,triplequad,cumtrapz,polyint,trapz,del2,diff,gradient,%
+		polyder,abs,angle,cplxpair,fft,fft2,fftn,fftshift,fftw,ifft,%
+		ifft2,ifftn,ifftshift,nextpow2,unwrap,conv,conv2,convn,deconv,detrend,%
+		filter,filter2,spdiags,speye,sprand,sprandn,sprandsym,sparse,spconvert,issparse,%
+		nnz,nonzeros,nzmax,spalloc,spfun,spones,spparms,spy,find,full,%
+		amd,colamd,colperm,dmperm,randperm,symamd,symrcm,cholinc,condest,eigs,%
+		ilu,luinc,normest,spaugment,sprank,svds,bicg,bicgstab,bicgstabl,cgs,%
+		gmres,lsqr,minres,pcg,qmr,symmlq,tfqmr,etree,etreeplot,gplot,%
+		symbfact,treelayout,treeplot,unmesh,trirep,trirep.circumcenters,trirep.edgeattachments,trirep.edges,trirep.facenormals,trirep.featureedges,%
+		trirep.freeboundary,trirep.incenters,trirep.isedge,trirep.neighbors,trirep.size,trirep.vertexattachments,delaunay,delaunayn,delaunaytri,delaunaytri.inoutstatus,%
+		tetramesh,trimesh,triplot,trisurf,delaunay3,trirep.barytocart,trirep.carttobary,trirep,dsearchn,tsearchn,%
+		delaunaytri.nearestneighbor,delaunaytri.pointlocation,delaunay,delaunayn,delaunaytri,dsearch,tsearch,delaunaytri.convexhull,convhull,convhulln,%
+		patch,trisurf,patch,voronoi,delaunaytri.voronoidiagram,voronoin,polyarea,inpolygon,rectint,plot,%
+		plotyy,plot3,loglog,semilogx,semilogy,errorbar,fplot,ezplot,ezplot3,bar,%
+		bar3,barh,bar3h,hist,histc,area,pareto,pie,pie3,rose,%
+		stem,stairs,stem3,scatter,scatter3,spy,plotmatrix,polar,rose,compass,%
+		ezpolar,contour,contourf,contourc,contour3,contourslice,ezcontour,ezcontourf,feather,quiver,%
+		compass,quiver3,streamslice,streamline,surf,surfc,surface,surfl,surfnorm,mesh,%
+		meshc,meshz,waterfall,ribbon,contour3,peaks,cylinder,ellipsoid,sphere,pcolor,%
+		surf2patch,ezsurf,ezsurfc,ezmesh,ezmeshc,contourslice,flow,isocaps,isocolors,isonormals,%
+		isosurface,reducepatch,reducevolume,shrinkfaces,slice,smooth3,subvolume,volumebounds,coneplot,curl,%
+		divergence,interpstreamspeed,stream2,stream3,streamline,streamparticles,streamribbon,streamslice,streamtube,fill,%
+		fill3,patch,surf2patch,movie,noanimate,drawnow,refreshdata,frame2im,getframe,im2frame,%
+		comet,comet3,title,xlabel,ylabel,zlabel,clabel,datetick,texlabel,legend,%
+		colorbar,xlim,ylim,zlim,box,grid,daspect,pbaspect,axes,axis,%
+		subplot,hold,gca,cla,annotation,text,legend,title,xlabel,ylabel,%
+		zlabel,datacursormode,ginput,gtext,colormap,colormapeditor,colorbar,brighten,contrast,shading,%
+		graymon,caxis,hsv2rgb,rgb2hsv,rgbplot,spinmap,colordef,whitebg,hidden,pan,%
+		reset,rotate,rotate3d,selectmoveresize,zoom,datacursormode,figurepalette,plotbrowser,plotedit,plottools,%
+		propertyeditor,showplottool,brush,datacursormode,linkdata,refreshdata,view,makehgtform,viewmtx,cameratoolbar,%
+		campan,camzoom,camdolly,camlookat,camorbit,campos,camproj,camroll,camtarget,camup,%
+		camva,camlight,light,lightangle,lighting,diffuse,material,specular,alim,alpha,%
+		alphamap,image,imagesc,imread,imwrite,imfinfo,imformats,frame2im,im2frame,im2java,%
+		ind2rgb,rgb2ind,imapprox,dither,cmpermute,cmunique,print,printopt,printdlg,printpreview,%
+		hgexport,saveas,orient,pagesetupdlg,gca,gcf,gcbf,gcbo,gco,ancestor,%
+		allchild,findall,findfigs,findobj,ishandle,copyobj,delete,get,set,propedit,%
+		rootobject,figure,axes,image,light,line,patch,rectangle,surface,text,%
+		annotation,set,get,hggroup,hgtransform,makehgtform,figure,gcf,close,clf,%
+		refresh,newplot,shg,hgload,hgsave,saveas,closereq,dragrect,drawnow,rbbox,%
+		opengl,axes,hold,ishold,newplot,linkaxes,linkprop,refreshdata,waitfor,get,%
+		set,case,otherwise,else,elseif,edit,input,publish,notebook,grabcode,%
+		snapnow,script,nargin,nargout,varargin,varargout,narginchk,nargoutchk,validateattributes,validatestring,%
+		inputparserclass,inputname,inputparser.addrequired,inputparser.addoptional,inputparser.addparamvalue,inputparser.parse,inputparser.createcopy,nargchk,persistent,genvarname,%
+		isvarname,namelengthmax,assignin,global,isglobal,datatipinfo,error,warning,lastwarn,assert,%
+		oncleanup,lasterr,lasterror,dbclear,dbcont,dbdown,dbquit,dbstack,dbstatus,dbstep,%
+		dbstop,dbtype,dbup,checkcode,keyboard,mlintrpt,mlint,edit,echo,eval,%
+		evalc,evalin,feval,run,builtin,depdir,depfun,mfilename,pcode,timer,%
+		deletetimer,disptimer,gettimer,isvalidtimer,settimer,start,startat,stop,timerfind,timerfindall,%
+		wait,clear,clearvars,disp,load,save,openvar,pack,who,whos,%
+		workspace,importdata,load,save,matfile,open,winopen,uiimport,uigetfile,uiputfile,%
+		daqread,csvread,csvwrite,dlmread,dlmwrite,fileread,textread,textscan,type,xlsfinfo,%
+		xlsread,xlswrite,wk1finfo,wk1read,wk1write,fclose,feof,ferror,fgetl,fgets,%
+		fopen,fprintf,fread,frewind,fscanf,fseek,ftell,fwrite,exifread,im2java,%
+		imfinfo,imread,imwrite,cdfepoch,cdfinfo,cdfread,cdfwrite,todatenum,cdflib,cdflib.getconstantnames,%
+		cdflib.getconstantvalue,cdflib.getfilebackward,cdflib.getlibrarycopyright,cdflib.getlibraryversion,cdflib.getvalidate,cdflib.setfilebackward,cdflib.setvalidate,cdflib.close,cdflib.create,cdflib.delete,%
+		cdflib.getcachesize,cdflib.getchecksum,cdflib.getcompression,cdflib.getcompressioncachesize,cdflib.getcopyright,cdflib.getformat,cdflib.getmajority,cdflib.getname,cdflib.getreadonlymode,cdflib.getstagecachesize,%
+		cdflib.getversion,cdflib.inquire,cdflib.open,cdflib.setcachesize,cdflib.setchecksum,cdflib.setcompression,cdflib.setcompressioncachesize,cdflib.setformat,cdflib.setmajority,cdflib.setreadonlymode,%
+		cdflib.setstagecachesize,cdflib.closevar,cdflib.createvar,cdflib.deletevar,cdflib.deletevarrecords,cdflib.getvarallocrecords,cdflib.getvarblockingfactor,cdflib.getvarcachesize,cdflib.getvarcompression,cdflib.getvardata,%
+		cdflib.getvarmaxallocrecnum,cdflib.getvarmaxwrittenrecnum,cdflib.getvarname,cdflib.getvarnum,cdflib.getvarnumrecswritten,cdflib.getvarpadvalue,cdflib.getvarrecorddata,cdflib.getvarreservepercent,cdflib.getvarsmaxwrittenrecnum,cdflib.getvarsparserecords,%
+		cdflib.hypergetvardata,cdflib.hyperputvardata,cdflib.inquirevar,cdflib.putvardata,cdflib.putvarrecorddata,cdflib.renamevar,cdflib.setvarallocblockrecords,cdflib.setvarblockingfactor,cdflib.setvarcachesize,cdflib.setvarcompression,%
+		cdflib.setvarinitialrecs,cdflib.setvarpadvalue,cdflib.setvarreservepercent,cdflib.setvarscachesize,cdflib.setvarsparserecords,cdflib.createattr,cdflib.deleteattr,cdflib.deleteattrentry,cdflib.deleteattrgentry,cdflib.getattrentry,%
+		cdflib.getattrgentry,cdflib.getattrmaxentry,cdflib.getattrmaxgentry,cdflib.getattrname,cdflib.getattrnum,cdflib.getattrscope,cdflib.getnumattrentries,cdflib.getnumattrgentries,cdflib.getnumattributes,cdflib.getnumgattributes,%
+		cdflib.inquireattr,cdflib.inquireattrentry,cdflib.inquireattrgentry,cdflib.putattrentry,cdflib.putattrgentry,cdflib.renameattr,cdflib.computeepoch,cdflib.computeepoch16,cdflib.epoch16breakdown,cdflib.epochbreakdown,%
+		nccreate,ncdisp,ncinfo,ncread,ncreadatt,ncwrite,ncwriteatt,ncwriteschema,netcdf,netcdf.setchunkcache,%
+		netcdf.getchunkcache,netcdf.inqlibvers,netcdf.setdefaultformat,netcdf.abort,netcdf.close,netcdf.create,netcdf.enddef,netcdf.inq,netcdf.inqformat,netcdf.inqgrps,%
+		netcdf.inqunlimdims,netcdf.open,netcdf.redef,netcdf.setfill,netcdf.sync,netcdf.defdim,netcdf.inqdim,netcdf.inqdimid,netcdf.renamedim,netcdf.defgrp,%
+		netcdf.inqdimids,netcdf.inqgrpname,netcdf.inqgrpnamefull,netcdf.inqgrpparent,netcdf.inqncid,netcdf.inqvarids,netcdf.defvarfill,netcdf.inqvardeflate,netcdf.defvar,netcdf.defvarchunking,%
+		netcdf.defvardeflate,netcdf.defvarfletcher32,netcdf.getvar,netcdf.inqvar,netcdf.inqvarchunking,netcdf.inqvarfill,netcdf.inqvarfletcher32,netcdf.inqvarid,netcdf.putvar,netcdf.renamevar,%
+		netcdf.copyatt,netcdf.delatt,netcdf.getatt,netcdf.inqatt,netcdf.inqattid,netcdf.inqattname,netcdf.putatt,netcdf.renameatt,netcdf.getconstant,netcdf.getconstantnames,%
+		fitsdisp,fitsinfo,fitsread,fitswrite,h5create,h5disp,h5info,h5read,h5readatt,h5write,%
+		h5writeatt,hdf,hdf5,hdf5info,hdf5read,hdf5write,hdfinfo,hdfread,hdftool,multibandread,%
+		multibandwrite,audioinfo,audioread,audiowrite,mmfileinfo,movie2avi,videoreaderclass,videowriterclass,aufinfo,auread,%
+		auwrite,wavfinfo,wavread,wavwrite,mmreaderclass,aviinfo,avifile,aviread,avifile.addframe,avifile.close,%
+		audiodevinfo,audioplayer,audiorecorder,sound,soundsc,audioplayer.get,audioplayer.play,audioplayer.playblocking,audioplayer.set,audiorecorder.get,%
+		audiorecorder.getaudiodata,audiorecorder.play,audiorecorder.record,audiorecorder.recordblocking,audiorecorder.set,wavplay,wavrecord,beep,lin2mu,mu2lin,%
+		xmlread,xmlwrite,xslt,dispmemmapfile,getmemmapfile,memmapfile,cd,copyfile,delete,dir,%
+		fileattrib,filebrowser,isdir,lookfor,ls,matlabroot,mkdir,movefile,pwd,recycle,%
+		rmdir,tempdir,toolboxdir,type,visdiff,what,filemarker,fileparts,filesep,fullfile,%
+		tempdir,tempname,gunzip,gzip,tar,untar,unzip,zip,addpath,genpath,%
+		path,path2rc,pathsep,pathtool,restoredefaultpath,rmpath,savepath,userpath,which,clipboard,%
+		computer,dos,getenv,hostid,perl,setenv,system,unix,winqueryreg,ftpclass,%
+		sendmail,urlread,urlwrite,web,serial.clear,serial.delete,serial.disp,serial.fclose,serial.fgetl,serial.fgets,%
+		serial.fopen,serial.fprintf,serial.fread,serial.fscanf,serial.fwrite,serial.get,instrcallback,instrfind,instrfindall,serial.isvalid,%
+		serial.length,serial.load,readasync,record,serial.save,serial,serialbreak,serial.set,serial.size,stopasync,%
+		figure,axes,uicontrol,uitable,uipanel,uibuttongroup,actxcontrol,guide,inspect,uicontrol_props,%
+		uitableproperties,uipanelproperties,uibuttongroupproperties,uimenu,uicontextmenu,uitoolbar,uipushtool,uitoggletool,uimenu_props,uicontextmenu_props,%
+		uitoolbarproperties,uipushtool_props,uitoggletool_props,dialog,errordlg,helpdlg,msgbox,questdlg,uigetpref,uisetpref,%
+		waitbar,warndlg,export2wsdlg,inputdlg,listdlg,uisetcolor,uisetfont,printdlg,printpreview,uigetdir,%
+		uigetfile,uiopen,uiputfile,uisave,menu,align,movegui,getpixelposition,setpixelposition,listfonts,%
+		textwrap,uistack,guidata,guihandles,openfig,getappdata,isappdata,rmappdata,setappdata,uiresume,%
+		uiwait,waitfor,waitforbuttonpress,addpref,getpref,ispref,rmpref,setpref,matlab.apputil.create,matlab.apputil.package,%
+		matlab.apputil.install,matlab.apputil.run,matlab.apputil.getinstalledappinfo,matlab.apputil.uninstall,class,isa,isequal,isobject,enumeration,events,%
+		methods,properties,classdef,import,properties,isprop,methods,ismethod,handle.delete,handle.findobj,%
+		isa,handle.isvalid,handle.findprop,handle.relationaloperators,events,handle.notify,handle.addlistener,empty,superclasses,superiorto,%
+		inferiorto,enumeration,save,load,saveobj,loadobj,cat,horzcat,vertcat,empty,%
+		disp,display,numel,size,end,subsref,subsasgn,subsindex,substruct,metaclass,%
+		meta.class.fromname,meta.package.fromname,meta.package.getallpackages,addcausemexception,getreportmexception,lastmexception,rethrowmexception,throwmexception,throwascallermexception,catch,%
+		dispmexception,eqmexception,nemexception,isequalmexception,bench,cputime,memory,profile,profsave,tic,%
+		toc,clear,inmem,memory,whos,mislocked,mlock,munlock,pack,rehash,%
+		builddocsearchdb,javaarray,javaclasspath,javaaddpath,javarmpath,javamethod,javamethodedt,javaobject,javaobjectedt,javachk,%
+		isjava,usejava,cell,class,clear,depfun,exist,fieldnames,im2java,import,%
+		inmem,inspect,isa,methods,methodsview,which,net.addassembly,net,enablenetfromnetworkdrive,net.createarray,%
+		cell,net.disableautorelease,net.enableautorelease,net.setstaticproperty,begininvoke,endinvoke,combine,remove,removeall,bitand,%
+		bitor,bitxor,bitnot,net.convertarray,net.creategeneric,net.invokegenericmethod,actxserver,actxcontrol,actxcontrollist,actxcontrolselect,%
+		iscom,com.isprop,com.get,com.set,addproperty,deleteproperty,inspect,com.propedit,fieldnames,com.ismethod,%
+		methods,methodsview,invoke,isevent,com.events,eventlisteners,registerevent,unregisterallevents,unregisterevent,isinterface,%
+		interfaces,release,com.delete,move,com.load,com.save,execute,com.feval,getchararray,putchararray,%
+		getfullmatrix,putfullmatrix,getvariable,getworkspacedata,putworkspacedata,maximizecommandwindow,minimizecommandwindow,actxgetrunningserver,enableservice,com.quit,%
+		callsoapservice,createclassfromwsdl,createsoapmessage,parsesoapresponse,loadlibrary,calllib,libfunctions,libfunctionsview,libisloaded,unloadlibrary,%
+		libstruct,libpointer,mex,mex.getcompilerconfigurations,mexext,dbmex,inmem,checkin,checkout,cmopts,%
+		customverctrl,undocheckout,verctrl,matlabwindows,matlabunix,exit,quit,matlabrc,startup,finish,%
+		prefdir,preferences,ismac,ispc,isstudent,isunix,javachk,license,usejava,ver,%
+		verlessthan,version,doc,help,demo,echodemo,lookfor,docsearch,helpbrowser,helpdesk,cordicatan2%
+		helpwin,info,support,whatsnew,...},%
+  comment=[l]\%,                                % comments
+  morecomment=[l]...,                         % comments
+  morecomment=[s]{\%\{}{\%\}},          % block comments
+  morecomment=[l][\bfseries\mcommentfont]\%\%,          % block comments 2
+   morestring=[m]'                             % strings 
+}[keywords,comments,strings]%
+
+% ---------------------------------------------------------------------------------
+% general definitions
+\lstset{%
+  basicstyle={\lstbasicfont},                 % set font
+  showstringspaces=false,                     % do not emphasize spaces in strings
+  tabsize=4,                                  % number of spaces of a TAB
+  mathescape=false,escapechar=§,              % escape to latex with §...§
+  upquote=true,                               % upright quotes
+  aboveskip={1.0\baselineskip},               % a bit of space above listings (1.5) % removed mwk
+  belowskip={1.2\baselineskip},               % added mwk
+  columns=fixed                               % nice spacing
+}
+
+% ---------------------------------------------------------------------------------
+% define colours and styles
+\ifbw % use font formating and gray 'colors'
+	\def\mcommentfont{\color[gray]{.75}\itshape} %comments light gray and italic
+  \lstset{language=matlabfloz,                % use our version of highlighting
+    keywordstyle=\bfseries,                   % keywords in bold
+    commentstyle=\mcommentfont,               % comments 
+    stringstyle=\color[gray]{0.5}             % strings darker gray
+  }
+\else% notbw => use colors : )
+	\def\mcommentfont{\color[rgb]{.133,.545,.133}} %comments in green
+  \lstset{language=matlabfloz,                % use our version of highlighting
+    keywordstyle=\color[rgb]{0,0,1},          % keywords in blue
+    commentstyle=\mcommentfont,               % comments
+    stringstyle=\color[rgb]{.627,.126,.941}   % strings in purple
+  } 
+\fi%bw
+
+% ---------------------------------------------------------------------------------
+% automatic line breaking --- warning, this is buggy and
+% doesn't break comments correctly!
+\ifautolinebreaks
+	\newsavebox{\lbreakdots}\sbox{\lbreakdots}{\lstbasicfont\mcommentfont...}
+	\lstset{breaklines=true,breakatwhitespace=true,prebreak=\usebox{\lbreakdots}}
+\fi
+
+% ---------------------------------------------------------------------------------
+% literate replacements
+% the following is for replacing some matlab relations like >= or ~=
+% by the corresponding LaTeX symbols, which are much easier to read ...
+\ifuseliterate
+	\lstset{%
+		literate=%
+			{~}{{$\neg$}}1 %               \neg
+			{<=}{{\tiny$\leq$}}1 %         \leq
+			{>=}{{\tiny$\geq$}}1 %         \geq
+			{~=}{{\tiny$\neq$}}1 %         \neq
+			{delta}{{\tiny$\Delta$}}1 %    \Delta
+			{ä}{{\"a}}1 %         Umlaute % added mwk
+			{ü}{{\"u}}1 %         Umlaute
+			{ö}{{\"o}}1 %         Umlaute
+			{ß}{{\ss}}1 %         Umlaute
+			{Ä}{{\"A}}1 %         Umlaute
+			{Ü}{{\"U}}1 %         Umlaute
+			{Ö}{{\"O}}1 %         Umlaute
+			{(end)}{\lstbasicfont (end)}{5} % black ``end'' when indexing last vector element
+			{({ }end)}{\lstbasicfont ({ }end)}{6}
+			{(end{ })}{\lstbasicfont (end{ })}{6}
+			{({ }end{ })}{\lstbasicfont ({ }end{ })}{7}
+			{:end}{\lstbasicfont :end}{4}
+			{:{ }end}{\lstbasicfont :{ }end}{5}
+			{end:}{\lstbasicfont end:}{4}
+			{end{ }:}{\lstbasicfont end{ }:}{5}
+			{,end}{\lstbasicfont ,end}{4}
+			{,{ }end}{\lstbasicfont ,{ }end}{5}
+	}
+\else
+	\lstset{%
+		literate=%
+			{ä}{{\"a}}1 %         Umlaute % added mwk
+			{ü}{{\"u}}1 %         Umlaute
+			{ö}{{\"o}}1 %         Umlaute
+			{ß}{{\ss}}1 %         Umlaute
+			{Ä}{{\"A}}1 %         Umlaute
+			{Ü}{{\"U}}1 %         Umlaute
+			{Ö}{{\"O}}1 %         Umlaute
+			{(end)}{\lstbasicfont (end)}{5} % black ``end'' when indexing last vector element
+			{({ }end)}{\lstbasicfont ({ }end)}{6}
+			{(end{ })}{\lstbasicfont (end{ })}{6}
+			{({ }end{ })}{\lstbasicfont ({ }end{ })}{7}
+			{:end}{\lstbasicfont :end}{4}
+			{:{ }end}{\lstbasicfont :{ }end}{5}
+			{end:}{\lstbasicfont end:}{4}
+			{end{ }:}{\lstbasicfont end{ }:}{5}
+			{,end}{\lstbasicfont ,end}{4}
+			{,{ }end}{\lstbasicfont ,{ }end}{5}
+	}
+\fi%literates
+
+% ---------------------------------------------------------------------------------
+% line numbering
+\ifnumbered% numbered option
+  \lstset{%
+    numbersep=3mm, numbers=left, numberstyle=\tiny, % number style
+  }
+\fi
+
+\ifframed%   framed option
+  \lstset{%
+    %frame=single,                             % frame
+	%framerule=0pt,    
+    backgroundcolor=\color{hellgrau},
+  }
+  \ifnumbered%
+    \lstset{%
+      framexleftmargin=6mm, xleftmargin=6mm   % tweak margins
+    }
+  \fi
+\fi
+
+\endinput
+%% End of file `mcode.sty'.

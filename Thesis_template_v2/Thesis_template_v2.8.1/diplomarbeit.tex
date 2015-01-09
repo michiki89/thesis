@@ -1,0 +1,197 @@
+	%
+% LaTeX template for Student Thesis & PhD Thesis
+%
+% Institute of Biomedical Engineering
+% Karlsruhe Institute of Technology (KIT)
+% www.ibt.kit.edu
+%
+% IBT template v2.8.1 (2014-05-17)
+% Last changes by js908 
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ATTENTION: In this template, do NOT use underscores ("_") in labels, figure file names etc., because this will produce errors!
+% Alternatively: Look at the "Hack" in LaTeXdefs.tex, but use it at your own risk!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%
+% Document Definitions %
+%%%%%%%%%%%%%%%%%%%
+% (Based on http://cupnet.net/latex-conditions/)
+
+%%% Language of thesis
+\newif\ifenglish
+%\englishtrue 				% define if thesis is in English
+\englishfalse 					% define if thesis is in German
+
+%%% APA style citations
+\newif\ifapa
+%\apatrue 						% define if APA style references are desired
+\apafalse 						% define if IEEE style references are desired
+
+%%% PhD Thesis or Student Thesis
+\newif\ifthesisisdiss
+%\thesisisdisstrue 			% define for PhD Thesis
+\thesisisdissfalse 			% define for Student Thesis
+
+%%% PhD Thesis for preparation or book print
+\newif\ifdissforprint
+%\dissforprinttrue 			% define for PhD Thesis for Print Process at KIT Scientific Publishing
+\dissforprintfalse 			% define for PhD Thesis for regular A4 printout
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Document Definitions  END%
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%
+%%% LaTeX matters %%%
+%%%%%%%%%%%%%%%%%%
+
+\documentclass[envcountsame,envcountchap,twoside,a4paper]{styles/svmono}
+
+\input{LaTeXdefs} 				% Definitions for packages, commands, hyphenation etc.
+
+
+\hyphenation{Li-te-ra-tur-ver-zeich-nis}
+
+\begin{document}
+\pagenumbering{alph}
+
+
+
+%%%%%%%%%%%%%%
+%%% Title Page %%%
+%%%%%%%%%%%%%%
+
+\ifthesisisdiss
+	\include{titlediss}			% Title for PhD thesis
+\else
+	\include{title}				% Title for student projects
+\fi
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearemptydoublepage
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\tableofcontents
+\newpage\thispagestyle{empty}
+\clearemptydoublepage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{arabic}
+
+% switch of document spacing
+%\doublespacing 							% = \setstretch{1.6}
+%\onehalfspacing 							% = \setstretch{1.3}
+%\singlespacing 							% = \setstretch{1.0}
+
+\ifdissforprint
+	\setstretch{1.2}							% more line spacing, as in A5 print and font size 13, 1.1 looks too narrow.
+\else
+	\setstretch{1.1}
+\fi
+
+\ifthesisisdiss
+	\part{Foundations}
+\fi
+
+\include{kapitel1}
+\newpage\thispagestyle{empty}
+\clearemptydoublepage
+
+\include{kapitel2}
+\newpage\thispagestyle{empty}
+\clearemptydoublepage
+
+\ifthesisisdiss
+	\part{Methods}
+\fi
+
+\include{kapitel3}
+\newpage\thispagestyle{empty}
+\clearemptydoublepage
+
+\include{kapitel4}
+\newpage\thispagestyle{empty}
+\clearemptydoublepage
+
+\ifthesisisdiss
+	\part{Results}
+\fi
+
+\include{kapitel5}
+\newpage\thispagestyle{empty}
+\clearemptydoublepage
+
+\include{kapitel6}
+\newpage\thispagestyle{empty}
+\clearemptydoublepage
+
+\include{kapitel7}
+\newpage\thispagestyle{empty}
+\clearemptydoublepage
+
+\include{kapitel8}
+\newpage\thispagestyle{empty}
+\clearemptydoublepage
+
+\begin{appendix}
+\include{anhang1}
+\end{appendix}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\listoffigures
+\newpage\thispagestyle{empty}
+\clearemptydoublepage
+
+\listoftables
+\newpage\thispagestyle{empty}
+\clearemptydoublepage
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Citation / Reference Style  %
+%%%%%%%%%%%%%%%%%%%%%%
+\ifapa
+	\bibliographystyle{styles/natdinIBT} 				% APA style in alphabetical order
+\else
+	\ifenglish
+		\bibliographystyle{styles/dipl}						% IEEE style, English Version
+	\else
+		\bibliographystyle{styles/diplGerman}			% IEEE style, German Version 
+	\fi
+\fi
+
+\bibliography{literatur,refbase}
+\thispagestyle{empty}
+\cleardoublepage
+
+\ifthesisisdiss
+	\include{kapitel9}
+	\newpage\thispagestyle{empty}
+	\clearemptydoublepage
+\fi
+
+\end{document}
