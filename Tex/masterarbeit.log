@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  1 DEC 2014 14:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 JAN 2015 17:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -829,10 +829,22 @@ Chapter 1.
 
  (./Fundamentals.tex
 Chapter 2.
-) [3
+
+Package natbib Warning: Citation `sherwood07' on page 3 undefined on input line
+ 31.
 
 
-] [4]
+Package natbib Warning: Citation `sherwood07' on page 3 undefined on input line
+ 31.
+
+
+Package natbib Warning: Citation `schwegler11' on page 3 undefined on input lin
+e 31.
+
+[3
+
+
+]) [4]
 \openout2 = `Methods.aux'.
 
  (./Methods.tex
@@ -1006,13 +1018,13 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 58 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 11045 strings out of 493315
- 172760 string characters out of 6137904
- 249705 words of memory out of 5000000
- 14099 multiletter control sequences out of 15000+600000
+ 11047 strings out of 493315
+ 172785 string characters out of 6137904
+ 249706 words of memory out of 5000000
+ 14101 multiletter control sequences out of 15000+600000
  49917 words of font info for 108 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
- 40i,12n,45p,645b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,12n,45p,830b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/c
@@ -1029,7 +1041,7 @@ r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/l
 ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loca
 l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on masterarbeit.pdf (32 pages, 360059 bytes).
+Output written on masterarbeit.pdf (32 pages, 360895 bytes).
 PDF statistics:
  195 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams
