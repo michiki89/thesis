@@ -8,6 +8,7 @@
 \contentsline {paragraph}{The Vectorcardiogram (VCG)}{4}
 \contentsline {paragraph}{The Respiratory Sinus Arrhythmia (RSA)}{4}
 \contentsline {section}{\numberline {2.2}Mathematical Fundamentals}{4}
+\contentsline {subsection}{\numberline {2.2.1}Time Continuous and Discrete Signals}{4}
 \contentsline {chapter}{\numberline {3}Methods}{5}
 \contentsline {chapter}{\numberline {4}Results}{7}
 \contentsline {chapter}{\numberline {5}Tabellen}{9}

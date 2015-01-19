@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  16 JAN 2015 12:23
+=======
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.18)  13 JAN 2015 23:59
+>>>>>>> 6d90842cf2d6bd322b7565e8ce64a86976a548b3
 entering extended mode
 **masterarbeit.tex
 (C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\masterarbeit.tex
@@ -778,15 +782,15 @@ Chapter 1.
 Chapter 2.
 
 Package natbib Warning: Citation `sherwood07' on page 3 undefined on input line
- 31.
+ 39.
 
 
 Package natbib Warning: Citation `sherwood07' on page 3 undefined on input line
- 31.
+ 39.
 
 
 Package natbib Warning: Citation `schwegler11' on page 3 undefined on input lin
-e 31.
+e 39.
 
 [3
 
@@ -823,21 +827,33 @@ Package natbib Warning: Citation `calkins12' on page 5 undefined on input line
 ]
 (C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Results.tex
 Chapter 4.
+<<<<<<< HEAD
+<pics/einsteinlabel.pdf, id=51, 207.77625pt x 286.06876pt>
+=======
 <pics/einsteinlabel.pdf, id=49, 207.77625pt x 286.06876pt>
+>>>>>>> 6d90842cf2d6bd322b7565e8ce64a86976a548b3
 File: pics/einsteinlabel.pdf Graphic file (type pdf)
 
 <use pics/einsteinlabel.pdf>
 Package pdftex.def Info: pics/einsteinlabel.pdf used on input line 8.
 (pdftex.def)             Requested size: 254.71165pt x 350.70573pt.
 
+<<<<<<< HEAD
+<pics/einsteinlabel.png, id=52, 206.371pt x 286.671pt>
+=======
 <pics/einsteinlabel.png, id=50, 206.371pt x 286.671pt>
+>>>>>>> 6d90842cf2d6bd322b7565e8ce64a86976a548b3
 File: pics/einsteinlabel.png Graphic file (type png)
 
 <use pics/einsteinlabel.png>
 Package pdftex.def Info: pics/einsteinlabel.png used on input line 14.
 (pdftex.def)             Requested size: 254.71165pt x 353.83676pt.
 
+<<<<<<< HEAD
+<pics/APsMfrag.pdf, id=54, 298.16393pt x 224.9203pt>
+=======
 <pics/APsMfrag.pdf, id=52, 298.16393pt x 224.9203pt>
+>>>>>>> 6d90842cf2d6bd322b7565e8ce64a86976a548b3
 File: pics/APsMfrag.pdf Graphic file (type pdf)
  <use pics/APsMfrag.pdf>
 Package pdftex.def Info: pics/APsMfrag.pdf used on input line 24.
@@ -958,6 +974,32 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 58 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
+ 11048 strings out of 493315
+ 172797 string characters out of 6137904
+ 249718 words of memory out of 5000000
+ 14102 multiletter control sequences out of 15000+600000
+ 49917 words of font info for 108 fonts, out of 8000000 for 9000
+ 960 hyphenation exceptions out of 8191
+ 40i,12n,45p,1006b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmcsc10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmex10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on masterarbeit.pdf (32 pages, 362188 bytes).
+=======
  11140 strings out of 493921
  188915 string characters out of 3144872
  242399 words of memory out of 3000000
@@ -982,6 +1024,7 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on masterarbeit.pdf (32 pages, 384478 bytes).
+>>>>>>> 6d90842cf2d6bd322b7565e8ce64a86976a548b3
 PDF statistics:
  192 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
