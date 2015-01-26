@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.18)  25 JAN 2015 19:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.18)  26 JAN 2015 22:07
 entering extended mode
 **Fundamentals.tex
 (C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Fundamentals.tex
@@ -2869,7 +2869,7 @@ or  <return>  to continue without it.
 
 ! Undefined control sequence.
 l.43 \includegraphics
-                     {HeartAnatomy.eps}
+                     {HeartAnatomy.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2889,9 +2889,9 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no e in font nullfont!
 Missing character: There is no p in font nullfont!
-Missing character: There is no s in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{figure}.
 

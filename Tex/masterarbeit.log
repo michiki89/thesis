@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.18)  25 JAN 2015 19:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.18)  26 JAN 2015 23:08
 entering extended mode
 **masterarbeit.tex
 (C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\masterarbeit.tex
@@ -679,6 +679,88 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count171
 \U@D=\dimen267
 )))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\layouts\layouts.sty"
+Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
+\l@ylen=\skip86
+\layoutsbox=\box75
+\l@youtunitlength=\skip87
+\l@youtlinethick=\skip88
+\l@youtlinethickii=\skip89
+\l@ysetupparskip=\skip90
+\l@ysetupbaselineskip=\skip91
+\l@yonem=\skip92
+\l@yonex=\skip93
+\l@ylmarg=\skip94
+\l@yrmarg=\skip95
+\l@yitmindent=\skip96
+\l@ylblwidth=\skip97
+\l@ylblsep=\skip98
+\l@ylparindent=\skip99
+\l@ytsep=\skip100
+\l@ypskip=\skip101
+\l@yptsep=\skip102
+\l@ypsep=\skip103
+\l@yitmsep=\skip104
+\l@ytok=\toks31
+\l@youtpw=\count172
+\l@youtph=\count173
+\l@youthpi=\count174
+\l@youthpii=\count175
+\l@youthpiii=\count176
+\l@youthpiv=\count177
+\l@youthpv=\count178
+\l@youthpvi=\count179
+\l@youthpvii=\count180
+\l@youtparskip=\count181
+\l@youtvpi=\count182
+\l@youtvpii=\count183
+\l@youtvpiii=\count184
+\l@youtvpiv=\count185
+\l@youtvpv=\count186
+\l@youtvpvi=\count187
+\l@youtvpvii=\count188
+\l@youthdo=\count189
+\l@youthdi=\count190
+\l@youthdii=\count191
+\l@youthdiii=\count192
+\l@youthdiv=\count193
+\l@youthdv=\count194
+\l@youthdvi=\count195
+\l@youthdvii=\count196
+\l@youtvdo=\count197
+\l@youtvdi=\count198
+\l@youtvdii=\count199
+\l@youtvdiii=\count200
+\l@youtvdiv=\count201
+Normal \count register pool exhausted, switching to extended pool.
+\l@youtvdv=\count277
+\l@youtvdvi=\count278
+\l@youtvdvii=\count279
+\l@youtvdviii=\count280
+\l@youtxci=\count281
+\l@youtxcii=\count282
+\l@youtxciii=\count283
+\l@youtxciv=\count284
+\l@youtxcv=\count285
+\l@youtxcvi=\count286
+\l@youtyci=\count287
+\l@youtycii=\count288
+\l@youtyciii=\count289
+\l@youtyciv=\count290
+\l@youtycv=\count291
+\l@youtycvi=\count292
+\l@youtycvii=\count293
+\l@youtycviii=\count294
+\l@youtxco=\count295
+\l@youtyco=\count296
+\l@ytempdima=\skip105
+\stockwidth=\skip106
+\stockheight=\skip107
+\trimedge=\skip108
+\trimtop=\skip109
+\uppermargin=\skip110
+\spinemargin=\skip111
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen268
@@ -686,10 +768,10 @@ Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip86
-\bibsep=\skip87
+\bibhang=\skip112
+\bibsep=\skip113
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count172
+\c@NAT@ctr=\count297
 ))
 (C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\masterarbeit.aux
 (C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\title.aux)
@@ -720,18 +802,22 @@ LaTeX Font Info:    ... okay on input line 61.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count173
+\scratchcounter=\count298
 \scratchdimen=\dimen270
-\scratchbox=\box75
-\nofMPsegments=\count174
-\nofMParguments=\count175
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count176
+\scratchbox=\box76
+\nofMPsegments=\count299
+\nofMParguments=\count300
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count301
 \MPscratchDim=\dimen271
-\MPnumerator=\count177
-\makeMPintoPDFobject=\count178
-\everyMPtoPDFconversion=\toks32
-) (C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\title.tex
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
+\everyMPtoPDFconversion=\toks33
+)
+
+Package layouts Warning: Layout scale set to 0.5 on input line 61.
+
+(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\title.tex
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 21.
 
 Overfull \hbox (16.50261pt too wide) in paragraph at lines 6--22
@@ -781,27 +867,17 @@ Chapter 1.
 ]
 (C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Fundamentals.tex
 Chapter 2.
-<pics/HeartAnatomy.png, id=36, 481.8pt x 301.125pt>
-File: pics/HeartAnatomy.png Graphic file (type png)
-
-<use pics/HeartAnatomy.png>
-Package pdftex.def Info: pics/HeartAnatomy.png used on input line 43.
-(pdftex.def)             Requested size: 481.79881pt x 301.12425pt.
-
-Overfull \hbox (57.2837pt too wide) in paragraph at lines 43--44
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--47
-
- []
+<pics/TestBild.png, id=36, 424.58624pt x 284.06125pt>
+File: pics/TestBild.png Graphic file (type png)
+ <use pics/TestBild.png>
+Package pdftex.def Info: pics/TestBild.png used on input line 43.
+(pdftex.def)             Requested size: 318.38632pt x 213.01938pt.
 
 [3
 
 
-] [4 <C:/Users/miguel/Documents/Uni/MasterThesis_IBT/Thesis/Tex/pics/HeartAnato
-my.png>]) [5] [6
+] [4 <C:/Users/miguel/Documents/Uni/MasterThesis_IBT/Thesis/Tex/pics/TestBild.p
+ng>]) [5] [6
 
 
 ]
@@ -966,13 +1042,13 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 58 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 11186 strings out of 493921
- 189759 string characters out of 3144872
- 242959 words of memory out of 3000000
- 14154 multiletter control sequences out of 15000+200000
+ 11456 strings out of 493921
+ 193176 string characters out of 3144872
+ 266351 words of memory out of 3000000
+ 14420 multiletter control sequences out of 15000+200000
  49917 words of font info for 108 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
- 37i,12n,45p,10425b,489s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,12n,45p,10425b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
@@ -989,7 +1065,7 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on masterarbeit.pdf (36 pages, 913926 bytes).
+Output written on masterarbeit.pdf (36 pages, 393301 bytes).
 PDF statistics:
  206 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
