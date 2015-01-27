@@ -1,20 +1,11 @@
-\contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {chapter}{\numberline {2}Fundamentals}{3}
-\contentsline {section}{\numberline {2.1}Physiological Fundamentals}{3}
-\contentsline {subsection}{\numberline {2.1.1}The Anatomy and Mechanics of the Human Heart}{3}
-\contentsline {subsection}{\numberline {2.1.2}The Electrophysiology of the Human Heart}{4}
-\contentsline {subsection}{\numberline {2.1.3}The Autonomic Nervous System}{4}
-\contentsline {subsection}{\numberline {2.1.4}The Electrocardiogram (ECG)}{4}
-\contentsline {paragraph}{The Vectorcardiogram (VCG)}{4}
-\contentsline {paragraph}{The Respiratory Sinus Arrhythmia (RSA)}{4}
-\contentsline {section}{\numberline {2.2}Mathematical Fundamentals}{4}
-\contentsline {subsection}{\numberline {2.2.1}Time Continuous and Discrete Signals}{4}
-\contentsline {chapter}{\numberline {3}Methods}{7}
-\contentsline {chapter}{\numberline {4}Results}{9}
-\contentsline {chapter}{\numberline {5}Tabellen}{11}
-\contentsline {chapter}{\numberline {6}Formeln}{15}
-\contentsline {section}{\numberline {6.1}FFT-Algorithmus}{15}
-\contentsline {chapter}{\numberline {7}Zusammenfassung}{19}
-\contentsline {chapter}{\numberline {8}Ausblick}{21}
-\contentsline {chapter}{\numberline {A}Anhang1}{23}
-\contentsline {chapter}{References}{29}
+\contentsline {chapter}{\numberline {1}Fundamentals}{1}
+\contentsline {section}{\numberline {1.1}Physiological Fundamentals}{1}
+\contentsline {subsection}{\numberline {1.1.1}The Anatomy and Mechanics of the Human Heart}{1}
+\contentsline {subsection}{\numberline {1.1.2}The Electrophysiology of the Human Heart}{2}
+\contentsline {subsection}{\numberline {1.1.3}The Autonomic Nervous System}{2}
+\contentsline {subsection}{\numberline {1.1.4}The Electrocardiogram (ECG)}{2}
+\contentsline {paragraph}{The Vectorcardiogram (VCG)}{2}
+\contentsline {paragraph}{The Respiratory Sinus Arrhythmia (RSA)}{2}
+\contentsline {section}{\numberline {1.2}Mathematical Fundamentals}{2}
+\contentsline {subsection}{\numberline {1.2.1}Time Continuous and Discrete Signals}{2}
+\contentsline {chapter}{References}{9}

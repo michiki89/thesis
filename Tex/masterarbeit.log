@@ -1,19 +1,12 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.18)  26 JAN 2015 23:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  27 JAN 2015 10:02
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **masterarbeit.tex
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\masterarbeit.tex
+(./masterarbeit.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\styles/svmono.cls
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(./styles/svmono.cls
 
 LaTeX Warning: You have requested document class `styles/svmono',
                but the document class provides `svmono'.
@@ -32,9 +25,9 @@ Class Springer-SVMono Warning: Specified option or subpackage "a4paper"
 
 Class Springer-SVMono Info: extra/valid Springer sub-package 
 (Springer-SVMono)           not found in option list - using "global" style.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -85,30 +78,30 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 667.
 \tabcapgap=\dimen123
 \c@merk=\count89
 )
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\LaTeXdefs.tex
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+(./LaTeXdefs.tex
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen124
 \extrarowheight=\dimen125
@@ -119,7 +112,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \everycr=\toks15
 \minrowclearance=\skip45
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \c@tracingmulticols=\count91
 \mult@box=\box26
@@ -167,17 +160,17 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \colbreak@box=\box51
 \multicol@sort@counter=\count99
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pstool\pstool.sty"
-Package: pstool 2014/05/11 v1.5c Wrapper for processing PostScript/psfrag figur
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pstool/pstool.sty
+Package: pstool 2013/03/11 v1.5a Wrapper for processing PostScript/psfrag figur
 es
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\catchfile.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -186,14 +179,14 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ifplatform\ifplatform.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -205,92 +198,117 @@ Package pdftexcmds Info: \pdfdraftmode found.
 Package ifplatform Warning: 
     shell escape is disabled, so I can only detect \ifwindows.
 
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\filemod\filemod.sty"
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/filemod/filemod.sty
 Package: filemod 2011/09/19 v1.2 Get and compare file modification times
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\filemod\filemod-expmin.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/filemod/filemod-expmin.sty
 Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
  (expandable; minimal)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 \Gin@req@height=\dimen134
 \Gin@req@width=\dimen135
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psfrag\psfrag.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psfrag/psfrag.sty
 Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
 \pfg@pcount=\count100
 \pfg@scount=\count101
 \pfg@temp=\write3
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\bigfoot\suffix.sty"
-Package: suffix 2006/07/15 1.5a Variant command support
+(/usr/local/texlive/2013/texmf-dist/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5 Variant command support
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\trimspaces\trimspaces.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 \XKV@toks=\toks17
 \XKV@tempa@toks=\toks18
 \XKV@depth=\count102
 File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
-Package: expl3 2014/09/15 v5423 L3 programming layer (loader) 
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
-Package: expl3 2014/09/15 v5423 L3 programming layer (code) 
-L3 Module: l3bootstrap 2014/08/23 v5354 L3 Bootstrap code
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\misc\etex.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3names.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty
+Package: l3bootstrap 2013/01/08 v4420 L3 Experimental bootstrap code
+)
+Package: l3names 2012/12/07 v4346 L3 Namespace for primitives
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count103
 )
-L3 Module: l3names 2014/08/22 v5343 L3 Namespace for primitives
-L3 Module: l3basics 2014/08/24 v5364 L3 Basic definitions
-L3 Module: l3expan 2014/08/22 v5349 L3 Argument expansion
-L3 Module: l3tl 2014/08/24 v5359 L3 Token lists
-L3 Module: l3str 2014/08/24 v5368 L3 Strings
-L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
-L3 Module: l3int 2014/09/14 v5421 L3 Integers
+Package: expl3 2013/03/14 v4469 L3 Experimental code bundle wrapper
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3basics.sty
+Package: l3basics 2013/01/10 v4428 L3 Basic definitions
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3expan.sty
+Package: l3expan 2013/02/03 v4458 L3 Argument expansion
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3tl.sty
+Package: l3tl 2013/01/08 v4415 L3 Token lists
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3seq.sty
+Package: l3seq 2013/01/12 v4434 L3 Sequences and stacks
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3int.sty
+Package: l3int 2013/01/13 v4444 L3 Integers
 \c_max_int=\count104
 \l_tmpa_int=\count105
 \l_tmpb_int=\count106
 \g_tmpa_int=\count107
 \g_tmpb_int=\count108
-L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
-L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3quark.sty
+Package: l3quark 2012/11/04 v4268 L3 Quarks
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3prg.sty
+Package: l3prg 2013/02/13 v4459 L3 Control structures
 \g__prg_map_int=\count109
-L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
-L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
-L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
-L3 Module: l3msg 2014/08/24 v5358 L3 Messages
-L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3clist.sty
+Package: l3clist 2013/01/08 v4414 L3 Comma separated lists
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3token.sty
+Package: l3token 2013/01/10 v4428 L3 Experimental token manipulation
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3prop.sty
+Package: l3prop 2013/01/09 v4423 L3 Property lists
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3msg.sty
+Package: l3msg 2013/01/08 v4412 L3 Messages
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3file.sty
+Package: l3file 2013/01/14 v4446 L3 File and I/O operations
 \l_iow_line_count_int=\count110
 \l__iow_target_count_int=\count111
 \l__iow_current_line_int=\count112
 \l__iow_current_word_int=\count113
 \l__iow_current_indentation_int=\count114
-L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3skip.sty
+Package: l3skip 2013/01/13 v4444 L3 Dimensions and skips
 \c_zero_dim=\dimen136
 \c_max_dim=\dimen137
 \l_tmpa_dim=\dimen138
@@ -309,10 +327,14 @@ L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
 \l_tmpb_muskip=\muskip13
 \g_tmpa_muskip=\muskip14
 \g_tmpb_muskip=\muskip15
-L3 Module: l3keys 2014/08/23 v5354 L3 Key-value interfaces
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3keys.sty
+Package: l3keys 2013/02/24 v4461 L3 Experimental key-value interfaces
 \g__keyval_level_int=\count115
 \l_keys_choice_int=\count116
-L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3fp.sty
+Package: l3fp 2013/01/19 v4449 L3 Floating points
 \c__fp_leading_shift_int=\count117
 \c__fp_middle_shift_int=\count118
 \c__fp_trailing_shift_int=\count119
@@ -322,13 +344,17 @@ L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
 \c__fp_Bigg_leading_shift_int=\count123
 \c__fp_Bigg_middle_shift_int=\count124
 \c__fp_Bigg_trailing_shift_int=\count125
-L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3box.sty
+Package: l3box 2013/01/08 v4411 L3 Experimental boxes
 \c_empty_box=\box52
 \l_tmpa_box=\box53
 \l_tmpb_box=\box54
 \g_tmpa_box=\box55
 \g_tmpb_box=\box56
-L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3coffins.sty
+Package: l3coffins 2012/09/09 v4212 L3 Coffin code layer
 \l__coffin_internal_box=\box57
 \l__coffin_internal_dim=\dimen142
 \l__coffin_offset_x_dim=\dimen143
@@ -348,8 +374,17 @@ L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_display_offset_dim=\dimen149
 \l__coffin_display_x_dim=\dimen150
 \l__coffin_display_y_dim=\dimen151
-L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
-L3 Module: l3candidates 2014/08/24 v5366 L3 Experimental additions to l3kernel
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3color.sty
+Package: l3color 2012/08/29 v4156 L3 Experimental color support
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3luatex.sty
+Package: l3luatex 2012/08/03 v4049 L3 Experimental LuaTeX-specific functions
+\g__cctab_allocate_int=\count126
+\g__cctab_stack_int=\count127
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/l3kernel/l3candidates.sty
+Package: l3candidates 2013/03/14 v4468 L3 Experimental additions to l3kernel
 \l__box_top_dim=\dimen152
 \l__box_bottom_dim=\dimen153
 \l__box_left_dim=\dimen154
@@ -366,13 +401,6 @@ L3 Module: l3candidates 2014/08/24 v5366 L3 Experimental additions to l3kernel
 \l__coffin_top_corner_dim=\dimen164
 \l__coffin_scaled_total_height_dim=\dimen165
 \l__coffin_scaled_width_dim=\dimen166
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3unicode-data.def"
-File: l3unicode-data.def 2014/08/12 v5276 L3 Unicode data
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.def"
-File: l3pdfmode.def 2014/08/24 v5366 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count126
 ))
 \pstool@out=\write4
 \pstool@mainfile@ior=\read1
@@ -382,13 +410,12 @@ File: l3pdfmode.def 2014/08/24 v5366 L3 Experimental driver: PDF mode
 Package pstool Warning: 
   Package option [process=none] activated
   because -shell-escape is not enabled.
-This warning occurred on input line 137.
+This warning occurred on input line 125.
 
-runsystem(cd ""& copy "masterarbeit.aux" "masterarbeit.oldaux" )...quotation er
-ror in system command.
+runsystem(cp -- masterarbeit.aux masterarbeit.oldaux)...disabled (restricted).
 
-) (C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\styles/dipl.sty
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+) (./styles/dipl.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip54
 \f@ncyO@elh=\skip55
 \f@ncyO@erh=\skip56
@@ -399,71 +426,71 @@ ror in system command.
 \f@ncyO@olf=\skip61
 \f@ncyO@orf=\skip62
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count127
+\c@float@type=\count128
 \float@exts=\toks19
 \float@box=\box67
 \@float@everytoks=\toks20
 \@floatcapt=\box68
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\german\german.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/german/german.sty
 v2.5e 1998-07-08
 Package: german 1998/07/08 v2.5e Support for writing german texts (br)
 \grmnU@D=\dimen167
-german -- \language number for Austrian undefined, default 22 used.
+german -- \language number for Austrian undefined, default 30 used.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
-Package: subfigure 2002/07/30 v2.1.4 subfigure package
+(/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip63
 \subfigcapskip=\skip64
 \subfigcaptopadj=\dimen168
 \subfigbottomskip=\skip65
 \subfigcapmargin=\dimen169
 \subfiglabelskip=\skip66
-\c@subfigure=\count128
-\c@lofdepth=\count129
-\c@subtable=\count130
-\c@lotdepth=\count131
+\c@subfigure=\count129
+\c@lofdepth=\count130
+\c@subtable=\count131
+\c@lotdepth=\count132
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+(/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip67
 \subfig@bottom=\skip68
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip69
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks21
 \ex@=\dimen170
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen171
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count132
+\inf@bad=\count133
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count133
-\leftroot@=\count134
+\uproot@=\count134
+\leftroot@=\count135
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count135
-\DOTSCASE@=\count136
+\classnum@=\count136
+\DOTSCASE@=\count137
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -476,15 +503,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 
 Package amsmath Warning: Unable to redefine math accent \vec.
 
-\macc@depth=\count137
-\c@MaxMatrixCols=\count138
+\macc@depth=\count138
+\c@MaxMatrixCols=\count139
 \dotsspace@=\muskip17
-\c@parentequation=\count139
-\dspbrk@lvl=\count140
+\c@parentequation=\count140
+\dspbrk@lvl=\count141
 \tag@help=\toks22
-\row@=\count141
-\column@=\count142
-\maxfields@=\count143
+\row@=\count142
+\column@=\count143
+\maxfields@=\count144
 \andhelp@=\toks23
 \eqnshift@=\dimen173
 \alignsep@=\dimen174
@@ -498,20 +525,20 @@ Package amsmath Warning: Unable to redefine math accent \vec.
 \mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\delarray.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/delarray.sty
 Package: delarray 1994/03/14 v1.01 array delimiter package (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen179
 \lightrulewidth=\dimen180
@@ -523,58 +550,58 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen186
 \cmidrulekern=\dimen187
 \defaultaddspace=\dimen188
-\@cmidla=\count144
-\@cmidlb=\count145
+\@cmidla=\count145
+\@cmidlb=\count146
 \@aboverulesep=\dimen189
 \@belowrulesep=\dimen190
-\@thisruleclass=\count146
-\@lastruleclass=\count147
+\@thisruleclass=\count147
+\@lastruleclass=\count148
 \@thisrulewidth=\dimen191
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\dcolumn.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\shortvrb.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/shortvrb.sty
 Package: shortvrb 2010/02/04 v2.1e Standard LaTeX documentation package (FMi)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eepic\epic.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/eepic/epic.sty
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
-\@@multicnt=\count148
-\d@lta=\count149
+\@@multicnt=\count149
+\d@lta=\count150
 \@delta=\dimen192
 \@@delta=\dimen193
-\@gridcnt=\count150
-\@joinkind=\count151
+\@gridcnt=\count151
+\@joinkind=\count152
 \@dotgap=\dimen194
 \@ddotgap=\dimen195
-\@x@diff=\count152
-\@y@diff=\count153
+\@x@diff=\count153
+\@y@diff=\count154
 \x@diff=\dimen196
 \y@diff=\dimen197
 \@dotbox=\box71
-\num@segments=\count154
-\num@segmentsi=\count155
+\num@segments=\count155
+\num@segmentsi=\count156
 \@datafile=\read3
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eepic\eepicemu.sty"
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/eepic/eepicemu.sty
 Emulation of EEPIC using EPIC. Version 1.1a - Released Febrary 1, 1988
-\@spxcnt=\count156
-\@spycnt=\count157
-\@ispxcnt=\count158
-\@ispycnt=\count159
-\@cmidxcnt=\count160
-\@cmidycnt=\count161
+\@spxcnt=\count157
+\@spycnt=\count158
+\@ispxcnt=\count159
+\@ispycnt=\count160
+\@cmidxcnt=\count161
+\@cmidycnt=\count162
 \maxovaldiam=\dimen198
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\index\index.sty"
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/index/index.sty
 Package: index 2004/01/20 v4.2beta Improved index support (dmj)
 \@indexbox=\insert233
 \indexproofstyle=\toks26
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen199
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count162
+\c@tracingst=\count163
 \ST@wd=\dimen200
 \ST@rightskip=\skip72
 \ST@leftskip=\skip73
@@ -592,50 +619,50 @@ Normal \dimen register pool exhausted, switching to extended pool.
 \ST@dimen=\dimen264
 \ST@pbox=\box72
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\ae.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ae/ae.sty
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
 LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count163
+\c@r@tfl@t=\count164
 \rotFPtop=\skip75
 \rotFPbot=\skip76
 \rot@float@box=\box73
 \rot@mess@toks=\toks27
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count164
-\calc@Bcount=\count165
+\calc@Acount=\count165
+\calc@Bcount=\count166
 \calc@Adimen=\dimen265
 \calc@Bdimen=\dimen266
 \calc@Askip=\skip77
 \calc@Bskip=\skip78
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count166
+\calc@Ccount=\count167
 \calc@Cskip=\skip79
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\alg\alg.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/alg/alg.sty
 Package: alg 2001/02/12
 \algleftmarginwidth=\skip80
 \algrightmarginwidth=\skip81
@@ -644,42 +671,42 @@ Package: alg 2001/02/12
 \alg@fromleft=\skip84
 \alg@tmplen=\skip85
 \alg@tmpbox=\box74
-\c@alg@inmargin=\count167
-\c@algline=\count168
+\c@alg@inmargin=\count168
+\c@algline=\count169
 \@float@every@algorithmfloat=\toks28
-\c@algorithmfloat=\count169
+\c@algorithmfloat=\count170
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\type1cm\type1cm.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/type1cm/type1cm.sty
 Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
 atched RF)
 )
-\c@appcnt=\count170
+\c@appcnt=\count171
 \idxtitle@default=\toks29
 \tf@default=\write5
+\openout5 = `masterarbeit.idx'.
+
 Package index Info: Writing index file masterarbeit.idx on input line 218.
 \idxtitle@dix=\toks30
 \tf@dix=\write6
+\openout6 = `masterarbeit.idx'.
+
 Package index Info: Writing index file masterarbeit.idx on input line 219.
+\openout5 = `masterarbeit.idx'.
+
 Package index Info: Writing index file masterarbeit.idx on input line 220.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2008/07/08 v3.8m The Babel package
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/05/16 v3.9f The Babel package
 
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
-File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
-Language: english 2005/03/30 v3.3o English support from the babel system
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count171
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/05/16 v3.9f Babel common definitions
+\babel@savecnt=\count172
 \U@D=\dimen267
 )))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\layouts\layouts.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/layouts/layouts.sty
 Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
 \l@ylen=\skip86
 \layoutsbox=\box75
@@ -702,57 +729,57 @@ Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
 \l@ypsep=\skip103
 \l@yitmsep=\skip104
 \l@ytok=\toks31
-\l@youtpw=\count172
-\l@youtph=\count173
-\l@youthpi=\count174
-\l@youthpii=\count175
-\l@youthpiii=\count176
-\l@youthpiv=\count177
-\l@youthpv=\count178
-\l@youthpvi=\count179
-\l@youthpvii=\count180
-\l@youtparskip=\count181
-\l@youtvpi=\count182
-\l@youtvpii=\count183
-\l@youtvpiii=\count184
-\l@youtvpiv=\count185
-\l@youtvpv=\count186
-\l@youtvpvi=\count187
-\l@youtvpvii=\count188
-\l@youthdo=\count189
-\l@youthdi=\count190
-\l@youthdii=\count191
-\l@youthdiii=\count192
-\l@youthdiv=\count193
-\l@youthdv=\count194
-\l@youthdvi=\count195
-\l@youthdvii=\count196
-\l@youtvdo=\count197
-\l@youtvdi=\count198
-\l@youtvdii=\count199
-\l@youtvdiii=\count200
-\l@youtvdiv=\count201
+\l@youtpw=\count173
+\l@youtph=\count174
+\l@youthpi=\count175
+\l@youthpii=\count176
+\l@youthpiii=\count177
+\l@youthpiv=\count178
+\l@youthpv=\count179
+\l@youthpvi=\count180
+\l@youthpvii=\count181
+\l@youtparskip=\count182
+\l@youtvpi=\count183
+\l@youtvpii=\count184
+\l@youtvpiii=\count185
+\l@youtvpiv=\count186
+\l@youtvpv=\count187
+\l@youtvpvi=\count188
+\l@youtvpvii=\count189
+\l@youthdo=\count190
+\l@youthdi=\count191
+\l@youthdii=\count192
+\l@youthdiii=\count193
+\l@youthdiv=\count194
+\l@youthdv=\count195
+\l@youthdvi=\count196
+\l@youthdvii=\count197
+\l@youtvdo=\count198
+\l@youtvdi=\count199
+\l@youtvdii=\count200
+\l@youtvdiii=\count201
 Normal \count register pool exhausted, switching to extended pool.
-\l@youtvdv=\count277
-\l@youtvdvi=\count278
-\l@youtvdvii=\count279
-\l@youtvdviii=\count280
-\l@youtxci=\count281
-\l@youtxcii=\count282
-\l@youtxciii=\count283
-\l@youtxciv=\count284
-\l@youtxcv=\count285
-\l@youtxcvi=\count286
-\l@youtyci=\count287
-\l@youtycii=\count288
-\l@youtyciii=\count289
-\l@youtyciv=\count290
-\l@youtycv=\count291
-\l@youtycvi=\count292
-\l@youtycvii=\count293
-\l@youtycviii=\count294
-\l@youtxco=\count295
-\l@youtyco=\count296
+\l@youtvdiv=\count277
+\l@youtvdv=\count278
+\l@youtvdvi=\count279
+\l@youtvdvii=\count280
+\l@youtvdviii=\count281
+\l@youtxci=\count282
+\l@youtxcii=\count283
+\l@youtxciii=\count284
+\l@youtxciv=\count285
+\l@youtxcv=\count286
+\l@youtxcvi=\count287
+\l@youtyci=\count288
+\l@youtycii=\count289
+\l@youtyciii=\count290
+\l@youtyciv=\count291
+\l@youtycv=\count292
+\l@youtycvi=\count293
+\l@youtycvii=\count294
+\l@youtycviii=\count295
+\l@youtxco=\count296
+\l@youtyco=\count297
 \l@ytempdima=\skip105
 \stockwidth=\skip106
 \stockheight=\skip107
@@ -761,32 +788,21 @@ Normal \count register pool exhausted, switching to extended pool.
 \uppermargin=\skip110
 \spinemargin=\skip111
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen268
 \epsfysize=\dimen269
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip112
 \bibsep=\skip113
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count297
+\c@NAT@ctr=\count298
 ))
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\masterarbeit.aux
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\title.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Introduction.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Fundamentals.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Methods.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Results.aux
+(./masterarbeit.aux (./title.aux) (./Fundamentals.aux))
+\openout1 = `masterarbeit.aux'.
 
-LaTeX Warning: Label `piceinsteinpng' multiply defined.
-
-) (C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\kapitel5.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\kapitel6.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\kapitel7.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\kapitel8.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\anhang1.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
@@ -800,28 +816,53 @@ LaTeX Font Info:    ... okay on input line 61.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
+\scratchcounter=\count299
 \scratchdimen=\dimen270
 \scratchbox=\box76
-\nofMPsegments=\count299
-\nofMParguments=\count300
+\nofMPsegments=\count300
+\nofMParguments=\count301
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count301
+\MPscratchCnt=\count302
 \MPscratchDim=\dimen271
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
 \everyMPtoPDFconversion=\toks33
-)
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 
 Package layouts Warning: Layout scale set to 0.5 on input line 61.
 
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\title.tex
+\openout2 = `title.aux'.
+
+(./title.tex
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 21.
 
 Overfull \hbox (16.50261pt too wide) in paragraph at lines 6--22
- $[]$ 
+ []$ 
  []
 
 <pics/KITLOGO.pdf, id=1, 803.0pt x 401.5pt>
@@ -833,9 +874,8 @@ Package pdftex.def Info: pics/KITLOGO.pdf used on input line 36.
 Non-PDF special ignored!
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/miguel/Documents
-/Uni/MasterThesis_IBT/Thesis/Tex/pics/KITLOGO.pdf>]
-[2
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./pics/
+KITLOGO.pdf>] [2
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 59--62
@@ -845,229 +885,89 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--62
 ) [3] [4
 
 
-]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\masterarbeit.toc)
+] (./masterarbeit.toc)
 \tf@toc=\write7
+\openout7 = `masterarbeit.toc'.
 
-[1
+ [1
 
 
 ] [2
 
 ]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Introduction.tex
+\openout2 = `Fundamentals.aux'.
+
+ (./Fundamentals.tex
 Chapter 1.
-) [1
-
-
-
-] [2
-
-
-]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Fundamentals.tex
-Chapter 2.
-<pics/TestBild.png, id=36, 424.58624pt x 284.06125pt>
+<pics/TestBild.png, id=30, 424.58624pt x 284.06125pt>
 File: pics/TestBild.png Graphic file (type png)
  <use pics/TestBild.png>
 Package pdftex.def Info: pics/TestBild.png used on input line 43.
 (pdftex.def)             Requested size: 318.38632pt x 213.01938pt.
 
-[3
+[1
 
 
-] [4 <C:/Users/miguel/Documents/Uni/MasterThesis_IBT/Thesis/Tex/pics/TestBild.p
-ng>]) [5] [6
 
+] [2 <./pics/TestBild.png>]) [3] [4
+
+
+] (./masterarbeit.lof)
+\tf@lof=\write8
+\openout8 = `masterarbeit.lof'.
+
+ [5
+
+
+] [6
 
 ]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Methods.tex
-Chapter 3.
+(./masterarbeit.lot)
+\tf@lot=\write9
+\openout9 = `masterarbeit.lot'.
 
-LaTeX Warning: Reference `grundlagen' on page 7 undefined on input line 8.
-
-
-Package natbib Warning: Citation `riedel02' on page 7 undefined on input line 1
-4.
-
-
-Package natbib Warning: Citation `belytschko00' on page 7 undefined on input li
-ne 16.
-
-
-Package natbib Warning: Citation `belytschko00' on page 7 undefined on input li
-ne 16.
-
-
-Package natbib Warning: Citation `calkins12' on page 7 undefined on input line 
-16.
-
-) [7
-
+ [7
 
 ] [8
 
+] (./masterarbeit.bbl) [9
+
+] [10
 
 ]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Results.tex
-Chapter 4.
-<pics/einsteinlabel.pdf, id=59, 207.77625pt x 286.06876pt>
-File: pics/einsteinlabel.pdf Graphic file (type pdf)
+runsystem(rm -- masterarbeit.oldaux)...disabled (restricted).
 
-<use pics/einsteinlabel.pdf>
-Package pdftex.def Info: pics/einsteinlabel.pdf used on input line 8.
-(pdftex.def)             Requested size: 254.71165pt x 350.70573pt.
+ (./masterarbeit.aux
+(./title.aux) (./Fundamentals.aux)
 
-<pics/einsteinlabel.png, id=60, 206.371pt x 286.671pt>
-File: pics/einsteinlabel.png Graphic file (type png)
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
 
-<use pics/einsteinlabel.png>
-Package pdftex.def Info: pics/einsteinlabel.png used on input line 14.
-(pdftex.def)             Requested size: 254.71165pt x 353.83676pt.
-
-<pics/APsMfrag.pdf, id=61, 298.16393pt x 224.9203pt>
-File: pics/APsMfrag.pdf Graphic file (type pdf)
- <use pics/APsMfrag.pdf>
-Package pdftex.def Info: pics/APsMfrag.pdf used on input line 24.
-(pdftex.def)             Requested size: 298.16318pt x 224.91974pt.
-)
-[9
-
-
- <C:/Users/miguel/Documents/Uni/MasterThesis_IBT/Thesis/Tex/pics/einsteinlabel.
-pdf>] [10 <C:/Users/miguel/Documents/Uni/MasterThesis_IBT/Thesis/Tex/pics/einst
-einlabel.png> <C:/Users/miguel/Documents/Uni/MasterThesis_IBT/Thesis/Tex/pics/A
-PsMfrag.pdf>]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\kapitel5.tex
-Chapter 5.
-[11
-
-
-
-
-] [12]
-
-Package natbib Warning: Citation `gonzalez92bsp' on page 13 undefined on input 
-line 65.
-
-) [13] [14
-
-
-]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\kapitel6.tex
-Chapter 6.
-
-Package natbib Warning: Citation `gonzalez92bsp' on page 15 undefined on input 
-line 13.
-
-[15
-
-
-] [16]) [17] [18
-
-
-]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\kapitel7.tex
-Chapter 7.
-) [19
-
-
-] [20
-
-
-]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\kapitel8.tex
-Chapter 8.
-) [21
-
-
-] [22
-
-
-]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\anhang1.tex
-Appendix A.
-) [23
-
-
-] [24
-
-
-]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\masterarbeit.lof)
-\tf@lof=\write8
-
-[25
-
-] [26
-
-]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\masterarbeit.lot)
-\tf@lot=\write9
-
-[27
-
-] [28
-
-]
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\masterarbeit.bbl)
-[29
-
-] [30
-
-]
-
-Package natbib Warning: There were undefined citations.
-
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\masterarbeit.aux
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\title.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Introduction.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Fundamentals.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Methods.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\Results.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\kapitel5.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\kapitel6.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\kapitel7.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\kapitel8.aux)
-(C:\Users\miguel\Documents\Uni\MasterThesis_IBT\Thesis\Tex\anhang1.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- )
+) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 58 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 11456 strings out of 493921
- 193176 string characters out of 3144872
- 266351 words of memory out of 3000000
- 14420 multiletter control sequences out of 15000+200000
- 49917 words of font info for 108 fonts, out of 3000000 for 9000
- 844 hyphenation exceptions out of 8191
- 37i,12n,45p,10425b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcs
-c10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on masterarbeit.pdf (36 pages, 393301 bytes).
+ 11214 strings out of 493315
+ 174973 string characters out of 6137904
+ 263180 words of memory out of 5000000
+ 14332 multiletter control sequences out of 15000+600000
+ 37619 words of font info for 77 fonts, out of 8000000 for 9000
+ 960 hyphenation exceptions out of 8191
+ 40i,11n,45p,999b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmcsc10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb>
+Output written on masterarbeit.pdf (16 pages, 116389 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
