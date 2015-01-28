@@ -1,60 +1,6 @@
-This is BibTeX, Version 0.99d (TeX Live 2013)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: masterarbeit.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: masterarbeit.aux
 A level-1 auxiliary file: title.aux
 A level-1 auxiliary file: Fundamentals.aux
 The style file: styles/natdinIBT.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: literatur.bib
 Database file #2: refbase.bib
-Repeated entry---line 128898 of file refbase.bib
- : @book{sherwood07
- :                 ,
-I'm skipping whatever remains of this entry
-")" immediately follows an entry type---line 128904 of file refbase.bib
- : optlocation={Student Student (student@ibt
- :                                          )},
-I'm skipping whatever remains of this entry
-You've used 2 entries,
-            4646 wiz_defined-function locations,
-            898 strings with 6578 characters,
-and the built_in function-call counts, 960 in all, are:
-= -- 83
-> -- 30
-< -- 17
-+ -- 24
-- -- 10
-* -- 69
-:= -- 192
-add.period$ -- 3
-call.type$ -- 2
-change.case$ -- 9
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 31
-empty$ -- 68
-format.name$ -- 19
-if$ -- 172
-int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 4
-newline$ -- 26
-num.names$ -- 8
-pop$ -- 10
-preamble$ -- 1
-purify$ -- 13
-quote$ -- 0
-skip$ -- 51
-stack$ -- 0
-substring$ -- 41
-swap$ -- 5
-text.length$ -- 3
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 16
-warning$ -- 0
-while$ -- 9
-width$ -- 0
-write$ -- 38
-(There were 2 error messages)
